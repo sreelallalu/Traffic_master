@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" 
+    android:background="@drawable/regisback">
+
+    <Button
+        android:id="@+id/bt_skip_getstart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="33dp"
+        android:text="skip" />
+
+    <TextView
+        android:id="@+id/tv_msg_rgstr_for_dr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvusertypeinreg"
+        android:layout_centerVertical="true"
+        android:text="Registration for Drivers and officials" />
+
+    <Button
+        android:id="@+id/bt_register_getstart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bt_skip_registr"
+        android:layout_alignRight="@+id/bt_skip_registr"
+        android:layout_below="@+id/tv_msg_rgstr_for_dr"
+        android:layout_marginTop="43dp"
+        android:text="Register" />
+
+    <TextView
+        android:id="@+id/tv_msg_nt_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bt_skip_registr"
+        android:layout_alignLeft="@+id/bt_skip_registr"
+        android:text="not a driver?" />
+
+</RelativeLayout>

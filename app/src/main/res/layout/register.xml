@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="1dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".45"
+        android:background="#F55322" >
+
+        <ImageView
+            android:id="@+id/ivofficila"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="64dp"
+            android:src="@drawable/offcll" />
+
+        <ImageView
+            android:id="@+id/ivcitizen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textView2"
+            android:src="@drawable/citizen" />
+
+        <TextView
+            android:id="@+id/tvusertypeinreg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivofficila"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Citizen"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="31dp"
+            android:text="select user type"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+
+    
+
+    <EditText
+        android:id="@+id/et_uname_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="user name"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:maxLength="10"
+        android:id="@+id/et_uname_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="user mob"
+        android:inputType="number"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_uname_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="user email"
+        android:inputType="textEmailAddress"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="user password"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/dselect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="select vehicle type"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/sp_vtype_register"
+        android:layout_width="138dp"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et_vno_register"
+        android:layout_width="match_parent"
+        android:hint="vehicle no"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/bt_register_register"
+        android:background="@drawable/layout_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="Register" />
+
+</LinearLayout>
